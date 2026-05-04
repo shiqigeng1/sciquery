@@ -1,0 +1,75 @@
+{
+  "paper_id": "sample_review",
+  "final_topics": [
+    {
+      "topic_id": "topic_0001",
+      "title": "将chunk_0001中的结论推广到含额外边界条件的场景",
+      "merged_derivation_logic": "原文段落给出了受限条件下的结论，但尚未讨论边界条件变化时结论是否成立，因此可进行场景迁移。",
+      "implementation_steps": [
+        "明确原始条件与新增边界条件的差异，重写模型约束与变量定义。",
+        "在新增边界条件下重复核心推导，比较关键表达式与原结论的一致性。",
+        "统计不同边界条件下的偏差范围，识别原结论失效或保持成立的条件区间。"
+      ],
+      "evidence_quotes": [
+        "This review summarizes a baseline theoretical framework and notes that finite-si"
+      ],
+      "source_chunk_ids": [
+        "chunk_0001",
+        "chunk_0002",
+        "chunk_0003"
+      ],
+      "judges": [
+        {
+          "topic_id": "topic_0001",
+          "judge_model": "glm5",
+          "specificity": 4.0,
+          "feasibility": 3.9,
+          "evidence_alignment": 4.4,
+          "novelty": 3.5,
+          "value": 3.9,
+          "overall": 3.97,
+          "comment": "glm5 mock score",
+          "raw_output": "{\n  \"topic_id\": \"topic_0001\",\n  \"specificity\": 4.0,\n  \"feasibility\": 3.9,\n  \"evidence_alignment\": 4.4,\n  \"novelty\": 3.5,\n  \"value\": 3.9,\n  \"overall\": 3.97,\n  \"comment\": \"glm5 mock score\"\n}"
+        },
+        {
+          "topic_id": "topic_0001",
+          "judge_model": "qwen122",
+          "specificity": 4.3,
+          "feasibility": 4.2,
+          "evidence_alignment": 4.0,
+          "novelty": 3.4,
+          "value": 3.8,
+          "overall": 4.0,
+          "comment": "qwen122 mock score",
+          "raw_output": "{\n  \"topic_id\": \"topic_0001\",\n  \"specificity\": 4.3,\n  \"feasibility\": 4.2,\n  \"evidence_alignment\": 4.0,\n  \"novelty\": 3.4,\n  \"value\": 3.8,\n  \"overall\": 4.0,\n  \"comment\": \"qwen122 mock score\"\n}"
+        },
+        {
+          "topic_id": "topic_0001",
+          "judge_model": "qwen397",
+          "specificity": 3.8,
+          "feasibility": 3.7,
+          "evidence_alignment": 3.9,
+          "novelty": 4.4,
+          "value": 4.3,
+          "overall": 3.96,
+          "comment": "qwen397 mock score",
+          "raw_output": "{\n  \"topic_id\": \"topic_0001\",\n  \"specificity\": 3.8,\n  \"feasibility\": 3.7,\n  \"evidence_alignment\": 3.9,\n  \"novelty\": 4.4,\n  \"value\": 4.3,\n  \"overall\": 3.96,\n  \"comment\": \"qwen397 mock score\"\n}"
+        }
+      ],
+      "aggregate_score": {
+        "topic_id": "topic_0001",
+        "final_specificity": 4.0,
+        "final_feasibility": 3.9,
+        "final_evidence_alignment": 4.0,
+        "final_novelty": 3.5,
+        "final_value": 3.9,
+        "final_overall": 3.97,
+        "overall_spread": 0.04,
+        "evidence_spread": 0.5,
+        "status": "review",
+        "veto_reason": null
+      },
+      "status": "review"
+    }
+  ]
+}

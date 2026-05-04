@@ -1,0 +1,7 @@
+/input/
+/output/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
