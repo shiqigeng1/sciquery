@@ -1,0 +1,5 @@
+# Core SciQuery pipeline dependency.
+requests>=2.31.0
+
+# Used by the standalone NVIDIA/OpenAI-compatible examples in llm/.
+openai>=1.40.0
